@@ -34,14 +34,59 @@ namespace Basic_Input
             Console.WriteLine("Please enter a number");
             firstNumber= Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter a second number");
+            secondNumber = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter a third number");
+            thirdNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"The total of the the three numbers is {firstNumber + secondNumber + thirdNumber}. ");
+
+
+
+            //Distance 
+            double firstDistance;
+            double secondDistance;
+            double thirdDistance;
+
+
+            Console.WriteLine("Please enter the distance that is between you and your friend's house in kilometers");
+            firstDistance = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter the distance between your house and the White House in kilometers");
+            secondDistance = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter the distance between your house and the International Space Station in Kilometers");
+            thirdDistance = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"The average in kilometers of the three distances you entered is {Math.Round((firstDistance + secondDistance + thirdDistance) / 3 ,2)} ");
+
+
+
+
+            //Hypotenuese 
+            double sideOne;
+            double sideTwo;
+            double sideThree;
+
+            Console.WriteLine("What is the length of side 1 on your right triangle?");
+            sideOne = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("What is the lenght of side 2 on your right triangle?");
+            sideTwo = Convert.ToInt32(Console.ReadLine());
+            sideThree = ((sideOne * sideOne) + (sideTwo * sideTwo)) ;
+            Console.WriteLine($"The hypotenuese of your triangle is {Math.Round((Math.Sqrt(sideThree)), 2)} cm");
+
+
 
            
 
 
 
 
-            
+
+
+
+
+
+
+
+
+
+
 
 
 
